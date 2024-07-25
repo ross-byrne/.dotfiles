@@ -1,1 +1,5 @@
 .DS_Store
+
+# For Zed
+zed/.config/zed/embeddings/
+zed/.config/zed/prompts/

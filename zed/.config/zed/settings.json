@@ -36,7 +36,6 @@
     "**/Thumbs.db",
     "**/.classpath",
     "**/.settings",
-
     // Adding *_templ.go files to exclude list
     // to make working with templ easier
     "**/*_templ.go"
