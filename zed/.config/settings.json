@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "vim_mode": true,
   "theme": "Catppuccin Mocha - No Italics",
   "telemetry": {
     "diagnostics": true,
@@ -14,7 +15,6 @@
   },
   "ui_font_size": 16,
   "buffer_font_size": 15,
-
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
@@ -23,5 +23,22 @@
         }
       }
     }
-  }
+  },
+  // Adding *_templ.go files to exclude list
+  // to make working with templ easier
+  "file_scan_exclusions": [
+    // default settings
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+
+    // Adding *_templ.go files to exclude list
+    // to make working with templ easier
+    "**/*_templ.go"
+  ]
 }
