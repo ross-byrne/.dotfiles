@@ -6,6 +6,10 @@ import = [
   "~/.config/alacritty/catppuccin-mocha.toml"
 ]
 
+[shell]
+program = "/bin/zsh"
+args = ["-l"]
+
 [window]
 dimensions = { columns = 120, lines = 29 }
 
@@ -17,4 +21,4 @@ option_as_alt = "Both"
 [font]
 normal = { family = "Hack Nerd Font", style = "Regular" }
 
-size = 15
+size = 16
