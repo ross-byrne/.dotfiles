@@ -13,8 +13,8 @@ args = ["-l"]
 [window]
 dimensions = { columns = 120, lines = 29 }
 
-padding.x = 10
-padding.y = 10
+padding.x = 20
+padding.y = 20
 
 option_as_alt = "Both"
 
