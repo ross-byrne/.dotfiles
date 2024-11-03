@@ -3,3 +3,5 @@
 	email = ross.byrne@outlook.ie
 [push]
 	autoSetupRemote = true
+[core]
+	editor = vim

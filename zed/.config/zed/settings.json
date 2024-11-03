@@ -10,10 +10,11 @@
   "theme": "Catppuccin Mocha - No Italics",
   "telemetry": {
     "diagnostics": true,
-    "metrics": false
+    "metrics": true
   },
-  "ui_font_size": 28,
-  "buffer_font_size": 25,
+  "ui_font_size": 19,
+  "buffer_font_size": 18,
+  "formatter": "language_server",
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
@@ -21,6 +22,48 @@
           "analyzerTargetDir": true
         }
       }
+    },
+    "deno": {
+      "settings": {
+        "deno": {
+          "enable": true
+        }
+      }
+    },
+    // Tailwind
+    "tailwindcss-language-server": {
+      "settings": {
+        "includeLanguages": {
+          "erb": "html",
+          "ruby": "html"
+        },
+        "experimental": {
+          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
+        }
+      }
+    }
+  },
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph", "..."]
+    },
+    "TypeScript": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server"
+    },
+    "TSX": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server"
     }
   },
   // Adding *_templ.go files to exclude list
