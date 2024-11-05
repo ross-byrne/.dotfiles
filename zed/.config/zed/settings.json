@@ -13,7 +13,7 @@
     "metrics": true
   },
   "ui_font_size": 19,
-  "buffer_font_size": 18,
+  "buffer_font_size": 17,
   "formatter": "language_server",
   "lsp": {
     "rust-analyzer": {
@@ -38,14 +38,21 @@
           "ruby": "html"
         },
         "experimental": {
-          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
+          "classRegex": [
+            "\\bclass:\\s*['\"]([^'\"]*)['\"]"
+          ]
         }
       }
     }
   },
   "languages": {
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "!solargraph", "..."]
+      "language_servers": [
+        "ruby-lsp",
+        "rubocop",
+        "!solargraph",
+        "..."
+      ]
     },
     "TypeScript": {
       "language_servers": [
