@@ -12,7 +12,7 @@
     "diagnostics": true,
     "metrics": true
   },
-  "ui_font_size": 19,
+  "ui_font_size": 17,
   "buffer_font_size": 17,
   "formatter": "language_server",
   "lsp": {
