@@ -5,10 +5,12 @@ vim.g.rustaceanvim = {
   server = {
     settings = {
       ["rust-analyzer"] = {
-        rust = {
-          analyzertargetdir = true,
+        cargo = {
+          buildScripts = {
+            enable = true,
+          },
+          targetDir = true,
         },
-
         procMacro = {
           enable = true,
         },
