@@ -33,7 +33,7 @@
   },
   "agent_font_size": 20,
   "ui_font_size": 18,
-  "buffer_font_size": 18,
+  "buffer_font_size": 17.0,
   "formatter": "language_server",
   "lsp": {
     "rust-analyzer": {
