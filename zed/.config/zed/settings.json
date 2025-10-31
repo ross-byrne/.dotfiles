@@ -31,7 +31,7 @@
     "diagnostics": true,
     "metrics": true
   },
-  "agent_font_size": 20,
+  "agent_ui_font_size": 20,
   "ui_font_size": 18,
   "buffer_font_size": 17.0,
   "formatter": "language_server",
@@ -42,6 +42,15 @@
           "analyzerTargetDir": true
         }
       }
+    }
+  },
+  "languages": {
+    "Ruby": {
+      "language_servers": [
+        "ruby-lsp",
+        "rubocop",
+        "!solargraph"
+      ]
     }
   }
 }
