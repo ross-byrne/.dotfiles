@@ -7,16 +7,20 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "colorize_brackets": true,
+  "git_panel": {
+    "tree_view": true
+  },
   "agent_buffer_font_size": 17.0,
   "features": {
     "edit_prediction_provider": "none"
   },
   "agent": {
     "always_allow_tool_actions": true,
-    "default_profile": "write",
+    "default_profile": "ask",
     "default_model": {
-      "provider": "anthropic",
-      "model": "claude-sonnet-4-latest"
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.5"
     }
   },
   "vim_mode": true,
