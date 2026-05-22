@@ -1,3 +1,6 @@
+shell-integration = zsh
+window-inherit-working-directory = true
+
 theme = Catppuccin Mocha
 
 font-family = Hack Nerd Font Mono
@@ -7,6 +10,7 @@ window-height = 30
 window-width = 116
 window-padding-x = 10
 mouse-hide-while-typing = true
+tab-inherit-working-directory = true
 
 keybind = shift+enter=text:\n
 

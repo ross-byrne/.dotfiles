@@ -7,20 +7,36 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "diff_view_style": "unified",
+  "edit_predictions": {
+    "provider": "none"
+  },
+  "agent_servers": {
+    "github-copilot": {
+      "type": "registry"
+    }
+  },
   "colorize_brackets": true,
   "git_panel": {
+    "dock": "left",
     "tree_view": true
   },
   "agent_buffer_font_size": 17.0,
-  "features": {
-    "edit_prediction_provider": "none"
-  },
   "agent": {
-    "always_allow_tool_actions": true,
+    "dock": "right",
+    "tool_permissions": {
+      "default": "allow"
+    },
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5"
+      "model": "claude-sonnet-4.6"
     }
   },
   "vim_mode": true,
@@ -29,6 +45,7 @@
   },
   "cursor_blink": false,
   "project_panel": {
+    "dock": "left",
     "sticky_scroll": false
   },
   "theme": "Catppuccin Mocha - No Italics",
@@ -41,6 +58,11 @@
   "buffer_font_size": 17.0,
   "formatter": "language_server",
   "lsp": {
+    "rubocop": {
+      "settings": {
+        "use_bundler": true
+      }
+    },
     "rust-analyzer": {
       "initialization_options": {
         "rust": {
