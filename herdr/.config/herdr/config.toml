@@ -1,0 +1,56 @@
+onboarding = false
+# herdr config.
+#
+# Worktree actions go through the worktrunk plugin so the lifecycle hooks in
+# .config/wt.toml (per-worktree database, .env, dev port, teardown) always run.
+# The worktrunk.open binding deliberately shadows herdr's built-in
+# prefix+shift+g "new worktree", which would skip those hooks.
+
+[keys]
+# Cycle between agents (unset by default), and jump straight to agent N.
+# focus_agent uses ctrl+alt because plain alt (Option) composes special
+# characters on macOS instead of reaching herdr; ctrl+alt transmits reliably.
+next_agent = "prefix+a"
+previous_agent = "prefix+shift+a"
+focus_agent = "ctrl+alt+1..9"
+
+# Direct tab switching, no prefix. Pane apps that use ctrl+digit themselves
+# would no longer see these keys.
+switch_tab = ["prefix+1..9", "ctrl+1..9"]
+
+# Worktree: switch / create from default branch (replaces the built-in,
+# hook-less worktree action on this key)
+[[keys.command]]
+key = "prefix+shift+g"
+type = "plugin_action"
+command = "worktrunk.open"
+description = "Worktree: switch / create from default branch"
+
+# Worktree: switch / create from current branch
+[[keys.command]]
+key = "prefix+shift+c"
+type = "plugin_action"
+command = "worktrunk.open-current"
+description = "Worktree: switch / create from current branch"
+
+# Worktree: switch / create, including remote-tracking branches
+[[keys.command]]
+key = "prefix+shift+r"
+type = "plugin_action"
+command = "worktrunk.open-with-remotes"
+description = "Worktree: switch / create from local or remote branches"
+
+# Worktree: remove (runs wt remove, so the teardown hook drops the
+# worktree's databases)
+[[keys.command]]
+key = "prefix+shift+d"
+type = "plugin_action"
+command = "worktrunk.remove"
+description = "Worktree: remove"
+
+# Worktree: merge into the target branch (wt merge triggers teardown too)
+[[keys.command]]
+key = "prefix+shift+m"
+type = "plugin_action"
+command = "worktrunk.merge"
+description = "Worktree: merge into the target branch"

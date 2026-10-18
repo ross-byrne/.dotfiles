@@ -1,0 +1,15 @@
+# herdr-worktrunk plugin config. Read on every picker run; no reinstall needed.
+# See https://github.com/devashish2203/herdr-worktrunk for all options.
+
+# open_mode = "workspace" is the default and the maintained path: the plugin
+# runs wt itself, then registers the checkout with `herdr worktree open` so it
+# appears as a nested worktree workspace in the sidebar.
+
+# Open the pickers as a floating dialog over the layout instead of a split
+# pane below the workspace. Size it with popup_width / popup_height if the
+# default (half the window) is not right.
+picker_placement = "popup"
+
+# Keep the picker pane open after success so the output of wt and its hooks
+# (database creation, pnpm install, migrations) stays readable.
+hold_on_success = true
