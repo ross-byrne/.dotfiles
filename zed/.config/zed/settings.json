@@ -8,9 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   "language_models": {
-    "openai_compatible": {
-      
-    }
+    "openai_compatible": {}
   },
   "outline_panel": {
     "button": false,
@@ -30,9 +28,6 @@
         "effort": "high",
         "model": "opus"
       },
-      "type": "registry"
-    },
-    "github-copilot": {
       "type": "registry"
     }
   },
