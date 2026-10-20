@@ -6,6 +6,16 @@ onboarding = false
 # The worktrunk.open binding deliberately shadows herdr's built-in
 # prefix+shift+g "new worktree", which would skip those hooks.
 
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+[ui]
+agent_panel_sort = "spaces"
+
+[ui.sound]
+enabled = false
+
 [keys]
 # Cycle between agents (unset by default), and jump straight to agent N.
 # focus_agent uses ctrl+alt because plain alt (Option) composes special
