@@ -13,6 +13,7 @@ auto_switch = false
 [ui]
 agent_panel_sort = "spaces"
 
+status_indicators = "symbols"
 [ui.sound]
 enabled = false
 
